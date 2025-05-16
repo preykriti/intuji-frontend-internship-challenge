@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body header {
+  background: linear-gradient(to right, #C9E7F2, #62BADA);
+  height: 100vh;
+}
+body header nav {
+  display: flex;
+}/*# sourceMappingURL=styles.css.map */

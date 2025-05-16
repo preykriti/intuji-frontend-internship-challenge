@@ -1,0 +1,22 @@
+
+    $purple: #4F46BA;
+    $blue: #62BADA;
+    $skyblue: #C9E7F2;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    header{
+        background: linear-gradient(to right, $skyblue, $blue);
+        height: 100vh;
+
+        nav{
+            display: flex;
+        }
+    }
+
+}
