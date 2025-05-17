@@ -2,6 +2,7 @@
     $purple: #4F46BA;
     $blue: #62BADA;
     $skyblue: #C9E7F2;
+    $gray: #64607D;
 
 *{
     margin: 0;
@@ -10,13 +11,147 @@
 }
 
 body{
-    header{
-        background: linear-gradient(to right, $skyblue, $blue);
-        height: 100vh;
+    font-family: 'Manrope', sans-serif;
+}
 
-        nav{
-            display: flex;
-        }
+header{
+    background: linear-gradient(to right, $skyblue, $blue);
+    height: 100vh;
+    padding: 0 7rem;
+}
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    height: 5rem;
+
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 2rem;
     }
 
+}
+
+.hero-section{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    height: calc(100vh - 5rem);
+    gap: 5rem
+
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:1rem;
+    h3{
+        font-size: 60px;
+        font-weight:900;
+        line-height: 70px;
+    }
+
+    p{
+        color: $gray;
+        margin-bottom: 1.5rem;
+
+    }
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+
+
+    button{
+        border: none;
+        height: 55px;
+    }
+  }
+
+  .get-started {
+    background-color: $purple;
+    font-size: 14px;
+    color: white;
+    width: 162px;
+    border-radius: 47px;
+  }
+
+  .see-how {
+    span{
+        background-color: #22D497;
+        border-radius: 50%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60px;
+    }
+    background: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+.hero-features{
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-feature {
+   display: flex;
+   gap:0.5rem;
+   align-items: center;
+   
+   span{
+    font-size: 14px;
+    color: $gray;
+   }
+
+}
+.checkmark{
+    background-color: $purple;
+    border-radius: 50%;
+    color: white;
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image{
+    
+    overflow: hidden;
+    
+
+    img{
+        width: 360px;
+        object-fit: contain;
+        display: block;
+    }
+}
+
+.businesses{
+    text-align: center;
+    padding: 70px 0;
+
+    h3{
+        padding-bottom: 1.5rem;
+    }
+}
+.business-logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5rem;
+    
 }

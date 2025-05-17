@@ -1,36 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-    <nav>
+      <nav>
         <h2>AR SHAKIR</h2>
-        <ul>
-            <li>Product</li>
-            <li>Template</li>
-            <li>Blog</li>
-            <li>Pricing</li>
+        <ul class="nav-links">
+          <li>Product</li>
+          <li>Template</li>
+          <li>Blog</li>
+          <li>Pricing</li>
         </ul>
         <div class="navbar-buttons">
-            <button class="">Sign in</button>
-            <button class="btn">Start Free</button>
+          <button class="sign-in">Sign in</button>
+          <button class="start-free">Start Free</button>
         </div>
-    </nav>
-    <div class="hero">
-        <h4>Managing freelance payments has never been easier</h4>
-        <p>Yet bed any for traveling assistance indulgence unpleasing. Not thoughts all exercise blessing. </p>
-    </div>
+      </nav>
 
-</header>
-    
-<script src="./js/script.js"></script>
-</body>
+      <section class="hero-section">
+        <div class="hero-text">
+          <h3>Managing freelance payments has never been easier</h3>
+          <p>
+            Yet bed any for traveling assistance indulgence<br />
+            unpleasing. Not thoughts all exercise blessing.
+          </p>
+          <div class="hero-buttons">
+            <button class="get-started">Get Started</button>
+            <button class="see-how"><span class="play-icon">▶</span>See How it Works</button>
+          </div>
+          <div class="hero-features">
+            <div class="hero-feature">
+              <div class="checkmark">✔</div>
+              <span>Free Register</span>
+            </div>
+            <div class="hero-feature">
+              <div class="checkmark">✔</div>
+              <span>Great Service</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img alt="hero image" src="./assets/hero-image.png" />
+        </div>
+      </section>
+    </header>
+
+
+    <!-- businesses -->
+
+    <section class="businesses">
+        <h3>Over 32k+ software businesses growing with AR Shakir.</h3>
+        <div class="business-logos">
+            <img
+              src="/assets/open-zeppelin.png"
+              alt="OpenZeppelin"
+            />
+            <img src="/assets/oracle.png" alt="Oracle"/>
+            <img
+              src="/assets/morpheus.png"
+              alt="Morpheus"
+            />
+            <img
+              src="/assets/samsung.png"
+              alt="Samsung"
+            />
+            <img src="/assets/monday.png" alt="Monday"/>
+            <img
+              src="/assets/segment.png"
+              alt="Segment"
+            />
+            <img
+              src="/assets/protonet.png"
+              alt="Protonet"
+            />
+            </div>
+
+    </section>
+
+    <script src="./js/script.js"></script>
+  </body>
 </html>

@@ -4,10 +4,135 @@
   box-sizing: border-box;
 }
 
-body header {
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+header {
   background: linear-gradient(to right, #C9E7F2, #62BADA);
   height: 100vh;
+  padding: 0 7rem;
 }
-body header nav {
+
+nav {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  height: calc(100vh - 5rem);
+  gap: 5rem;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+.hero-text h3 {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 70px;
+}
+.hero-text p {
+  color: #64607D;
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.hero-buttons button {
+  border: none;
+  height: 55px;
+}
+
+.get-started {
+  background-color: #4F46BA;
+  font-size: 14px;
+  color: white;
+  width: 162px;
+  border-radius: 47px;
+}
+
+.see-how {
+  background: none;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.see-how span {
+  background-color: #22D497;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 60px;
+}
+
+.hero-features {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-feature {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+.hero-feature span {
+  font-size: 14px;
+  color: #64607D;
+}
+
+.checkmark {
+  background-color: #4F46BA;
+  border-radius: 50%;
+  color: white;
+  height: 18px;
+  width: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-image {
+  overflow: hidden;
+}
+.hero-image img {
+  width: 360px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  display: block;
+}
+
+.businesses {
+  text-align: center;
+  padding: 70px 0;
+}
+.businesses h3 {
+  padding-bottom: 1.5rem;
+}
+
+.business-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5rem;
 }/*# sourceMappingURL=styles.css.map */
