@@ -16,14 +16,22 @@ header {
 
 nav {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 0;
   height: 5rem;
 }
 nav ul {
   list-style: none;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+}
+nav ul li {
+  cursor: pointer;
 }
 
 .hero-section {
@@ -37,6 +45,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
   gap: 1rem;
 }
 .hero-text h3 {
@@ -51,6 +60,9 @@ nav ul {
 
 .hero-buttons {
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
   gap: 2rem;
   margin-bottom: 1.5rem;
 }
@@ -80,10 +92,12 @@ nav ul {
   border-radius: 50%;
   color: white;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 0;
   height: 100%;
-  width: 60px;
+  width: 55px;
 }
 
 .hero-features {
@@ -93,8 +107,10 @@ nav ul {
 
 .hero-feature {
   display: flex;
-  gap: 0.5rem;
+  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
+  gap: 0.5rem;
 }
 .hero-feature span {
   font-size: 14px;
@@ -108,8 +124,10 @@ nav ul {
   height: 18px;
   width: 18px;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  gap: 0;
 }
 
 .hero-image {
@@ -132,7 +150,60 @@ nav ul {
 
 .business-logos {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  gap: 0;
   padding: 0 5rem;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 3rem 7rem;
+}
+
+.portfolio-text h3 {
+  font-size: 56px;
+  font-weight: 900;
+}
+
+.review {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0;
+}
+
+.review-card {
+  position: relative;
+  background-color: #C4C4C4;
+  border-radius: 20px;
+  max-width: 402px;
+  height: 177px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0;
+  padding: 2rem;
+}
+.review-card .author {
+  margin-top: 1rem;
+}
+
+.quote-icon {
+  position: absolute;
+  background-color: black;
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  top: -18px;
 }/*# sourceMappingURL=styles.css.map */
